@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #8a51fc;
+    background-color: #121111;
 }
 
 .logo {
@@ -47,7 +47,7 @@ select, input {
 }
 
 button {
-    background: #772fd3;
+    background: rgb(2, 141, 2);
     border-radius: 5px;
     width: 100%;
     border: none;

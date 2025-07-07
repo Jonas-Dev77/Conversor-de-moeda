@@ -3,7 +3,8 @@ const convertButton = document.querySelector(".convert-button")
 const currencySelect = document.querySelector(".currency-select")
 
 function convertValues(){
-    const inputCurrencyValue = document.querySelector(".input-currency").value
+    const inputCurrencyValue = parseFloat(document.querySelector(".input-currency").value .replace(",", "."))
+    
     const CurrencyValuetoConvert = document.querySelector(".currency-value-to-convert")
     const CurrencyValueConverted = document.querySelector(".currency-value")
 
@@ -57,12 +58,13 @@ function convertValues(){
 
     if (currencySelect.value == "libra") {
         currencyName.innerHTML = "libra esterlina"
-        currencyImage.src = "./assets/libra1.png"
+        currencyImage.src = "./assets/libra.png"
     }
 
     convertValues()
 
     console.log(currencySelect.value)
+
 
 
 }
